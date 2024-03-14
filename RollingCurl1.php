@@ -2,7 +2,7 @@ namespace RollingCurl;
 use RollingCurl\Request;
 class RollingCurl
 {
-    private $simultaneousLimit = 1;
+    private $simultaneousLimit = 0;
     private $callback;
     private $idleCallback;
 
