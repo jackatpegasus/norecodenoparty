@@ -401,8 +401,8 @@ class RollingCurl
      */
     public function setSimultaneousLimit($count)
     {
-        if (!is_int($count) || $count < 2) {
-            throw new \InvalidArgumentException("setSimultaneousLimit count must be an int >= 2");
+        if (!is_int($count) || $count < 1) {
+            throw new \InvalidArgumentException("setSimultaneousLimit count must be an int >= 1");
         }
         $this->simultaneousLimit = $count;
         return $this;
